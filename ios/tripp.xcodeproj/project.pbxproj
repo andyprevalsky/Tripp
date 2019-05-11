@@ -38,10 +38,8 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		3CA506620B45404BBF3FBA2E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA5704650D6D40C5BF6A9BA8 /* MaterialIcons.ttf */; };
 		3CACE010182C40098F3EF543 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E826B8C5CB78449D8134C67E /* AntDesign.ttf */; };
-		5940E1EE71C142E39EF06733 /* RNUberSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96786F03AA104243AD6CFF61 /* RNUberSDK.framework */; };
 		6C82BD94BF2649C1AAABC7B0 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 980D54C4F7084E13804FF839 /* FontAwesome5_Brands.ttf */; };
 		6E73ECD841284104AC8B52C4 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF45C607FC8248B3921BF6B0 /* FontAwesome5_Solid.ttf */; };
-		6EE9CB7495444F5F9E394E4A /* libRNUberBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E79533632B4792812ADCE7 /* libRNUberBridge.a */; };
 		73C2721DC1C241FB8A4D6A09 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC9625F990C14AE1B4343958 /* EvilIcons.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8709AB03C5F144659B7A4A0C /* libRNVectorIcons-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2FCB6E28874C1D9146DE7B /* libRNVectorIcons-tvOS.a */; };
@@ -52,10 +50,7 @@
 		CA1AD8BF80A342FFBBF9FFF3 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F803D8884EAA4D7482DE594F /* MaterialCommunityIcons.ttf */; };
 		CC8C6B22D3B344BCA4725355 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A11079343D1942B0B80CEA81 /* FontAwesome5_Regular.ttf */; };
 		DFD5A38FE97E4569823B1EE8 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B9D3B82F84FB4A1BBA7EC62F /* Ionicons.ttf */; };
-		E16116A3228144F50076AC40 /* UberCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13153082281392C008B74A4 /* UberCore.framework */; };
 		E16116A4228144F50076AC40 /* UberCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E13153082281392C008B74A4 /* UberCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1FABFA9228143760058E431 /* UberRides.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E131530C2281394F008B74A4 /* UberRides.framework */; };
-		E1FABFD1228143790058E431 /* UberCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13153082281392C008B74A4 /* UberCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		EE8B5E370EAF4D35A05666F6 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B7A0B9059D94F81BEC9E2E3 /* Entypo.ttf */; };
@@ -345,13 +340,6 @@
 			remoteGlobalIDString = A39873CE1EA65EE60051E01A;
 			remoteInfo = "RNVectorIcons-tvOS";
 		};
-		E13EA7F222825979001F63A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F9740D14CF439E9F6DA3F1 /* RNUberBridge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A63BE3181D27329D0060FEA6;
-			remoteInfo = RNUberBridge;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -399,7 +387,6 @@
 		78D616F25458444DA99193EC /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8359ED72471B44FEB15E415E /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
-		84F9740D14CF439E9F6DA3F1 /* RNUberBridge.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNUberBridge.xcodeproj; path = "../node_modules/react-native-uber-rides/RNUberBridge/RNUberBridge.xcodeproj"; sourceTree = "<group>"; };
 		852F42D97AC64FDE977B1B03 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		96786F03AA104243AD6CFF61 /* RNUberSDK.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = RNUberSDK.framework; path = System/Library/Frameworks/RNUberSDK.framework; sourceTree = SDKROOT; };
 		980D54C4F7084E13804FF839 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
@@ -441,10 +428,7 @@
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
 				00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */,
-				E1FABFA9228143760058E431 /* UberRides.framework in Frameworks */,
-				E1FABFD1228143790058E431 /* UberCore.framework in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
-				E16116A3228144F50076AC40 /* UberCore.framework in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
@@ -452,8 +436,6 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				F19EBE6EC15E49F6A2D44A6F /* libRNVectorIcons.a in Frameworks */,
-				6EE9CB7495444F5F9E394E4A /* libRNUberBridge.a in Frameworks */,
-				5940E1EE71C142E39EF06733 /* RNUberSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,7 +645,6 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				1620D1D405264BF79763E441 /* RNVectorIcons.xcodeproj */,
-				84F9740D14CF439E9F6DA3F1 /* RNUberBridge.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -728,14 +709,6 @@
 			children = (
 				E11E836F228131C100F8ED16 /* libRNVectorIcons.a */,
 				E11E8371228131C100F8ED16 /* libRNVectorIcons-tvOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E13EA7EF22825978001F63A8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E13EA7F322825979001F63A8 /* libRNUberBridge.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -900,10 +873,6 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
-				},
-				{
-					ProductGroup = E13EA7EF22825978001F63A8 /* Products */;
-					ProjectRef = 84F9740D14CF439E9F6DA3F1 /* RNUberBridge.xcodeproj */;
 				},
 				{
 					ProductGroup = E11E836A228131C100F8ED16 /* Products */;
@@ -1185,13 +1154,6 @@
 			fileType = archive.ar;
 			path = "libRNVectorIcons-tvOS.a";
 			remoteRef = E11E8370228131C100F8ED16 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E13EA7F322825979001F63A8 /* libRNUberBridge.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNUberBridge.a;
-			remoteRef = E13EA7F222825979001F63A8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

@@ -2,22 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-  <key>UberClientID</key>
-  <string>TXi5iR_jMl5ehjkgxdj-VRjVSAonqfM_</string>
-  <key>UberDisplayName</key>
-  <string>tripp</string>
-  <key>LSApplicationQueriesSchemes</key>
-  <array>
-    <string>uber</string>
-    <string>uberauth</string>
-  </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>tripp</string>
+		</dict>
+	</array>
+	<key>UberClientID</key>
+	<string>TXi5iR_jMl5ehjkgxdj-VRjVSAonqfM_</string>
+	<key>UberDisplayName</key>
+	<string>tripp</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>uber</string>
+		<string>uberauth</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
 	<string>tripp</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-  <key>CFBundleIdentifier</key>
+	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
@@ -34,7 +41,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

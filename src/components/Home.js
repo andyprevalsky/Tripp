@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, TouchableHighlight, ScrollView, Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { Card } from './Card';
+import { Card } from './common/Card';
 import { Icon } from 'native-base';
 
 images = {
@@ -171,6 +171,3 @@ const styles = {
         bottom: 0,
     },
 };
-
-
-export default Home;
