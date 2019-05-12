@@ -1,14 +1,14 @@
-import { View } from 'native-base';
+
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Icon } from 'react-native-elements';
-import { CardSection } from './common';
 import { Bubbles } from 'react-native-loader';
-import { TextInput, ImageBackground } from 'react-native';
+import { TextInput, ImageBackground, View, TouchableOpacity, Image } from 'react-native';
 import { emailTextChanged, passwordTextChanged, loginUser } from './actions';
 
 const LoginBackground = require('../Images/LoginBackground.jpg');
 const ButtonBackground = require('../Images/Green-Gradient.png');
-
+const Dimensions = require('Dimensions');
+const window = Dimensions.get('window');
 
 class LoginForm extends Component {
     
@@ -27,16 +27,12 @@ class LoginForm extends Component {
     render() {
         return (
             <ImageBackground source={LoginBackground} style={styles.BackgroundStyle}>
-                <View styles={styles.rootContainer}>
+                <View style={styles.RootContainer}>
+                    <View style={styles.HeaderContainer}>
+                    </View>
                     <View style={styles.InputContainer}>
-                        <CardSection style={styles.InputStyling}>
-                            <Icon 
-                                name="email-outline" 
-                                type="material-community"
-                                size={20} 
-                                color="#C0C0C0"
-                                style={{ paddingLeft: 5 }} 
-                                />
+
+                        <View style={styles.InputStyling}>
                             <TextInput
                                 style={{ flex: 1, fontSize: 18, paddingLeft: 10 }} 
                                 label="Email"
@@ -46,18 +42,9 @@ class LoginForm extends Component {
                                 value={this.props.email}
                                 color='#C0C0C0'
                                 />
-                        </CardSection>
-                    </View>
+                        </View>
 
-                    <View style={styles.InputContainer}>
-                        <CardSection style={styles.InputStyling}>
-                            <Icon 
-                                name="lock" 
-                                type="feather"
-                                size={20} 
-                                color="#C0C0C0" 
-                                style={{ paddingLeft: 5 }}
-                                />
+                        <View style={styles.InputStyling}>
                             <TextInput
                                 style={{ flex: 1, fontSize: 18, paddingLeft: 10 }} 
                                 secureTextEntry
@@ -68,66 +55,93 @@ class LoginForm extends Component {
                                 value={this.props.password}
                                 color="#C0C0C0"
                                 />
-                        </CardSection>
-                    </View>
+                        </View>
 
-                    <View style={styles.ButtonContainer}>
-                        <TouchableOpacity 
-                            onPress={this.onLoginButtonPress.bind(this)}
-                            >
-                            <Image
-                                style={styles.ButtonStyling}
-                                source={ButtonBackground} 
+                        <View style={styles.ButtonContainer}>
+                            <TouchableOpacity 
+                                onPress={this.onLoginButtonPress.bind(this)}   
+                            >  
+                                <Image
+                                    style={styles.ButtonStyling}
+                                    source={ButtonBackground} 
                                 />
-                        </TouchableOpacity>
+                            </TouchableOpacity>
+                        </View>
                     </View>
                 </View>
 
                 {/* Elements with absolute position, used as overlays */}
-
+            
                 { this.props.loading ? 
                     <View style={styles.LoadingContainer}>
                         <Bubbles   
-                            size={30}
-                            color={Color3}
+                            size={10}
+                            color="orange"
                         /> 
                     </View>
                 : null }
+
+                {/* End of overlayed elements */}
             </ImageBackground>
         );
     }
 }
 
 const styles = {
+    BackgroundStyle: {
+        flex: 1
+    },
+    RootContainer: {
+        flexDirection: "column",
+        flex: 1
+    },
+    HeaderContainer: {
+        height: window.height*.4,
+        width: "100%",
+        backgroundColor: "maroon"
+    },
     InputContainer: {
-        
+        height: window.height*.5,
+        flexDirection: "column",
+        alignItems: "space-between",
+        justifyContent: "flex-start",
+        marginLeft: window.width*.08,
+        marginRight: window.width*.08,
+        backgroundColor: "blue"
     },
     InputStyling: {
-        borderBottomWidth: 1,
-        padding: 15,
-        borderRadius: 15,
-        backgroundColor: 'rgba(255, 255, 255, .0)',
-        borderColor: 'grey',
-    },
-    BackgroundStyle: {
-    },
-    LoadingContainer: {
-        position: "absolute",
-        backgroundColor: "rgba(0, 0, 0, .7)"
-    },
-    rootContainer: {
-        
+        marginTop: 10,
+        height: 40,
+        borderBottomWidth: 10,
+        borderRadius: 3,
+        backgroundColor: '#fff',
+        justifyContent: 'flex-start',
+        flexDirection: 'row',
+        borderColor: '#ddd',
+        position: 'relative',
     },
     ButtonContainer: {
-        paddingTop: 10,
-        paddingLeft: 1,
-        paddingRight: 1,
-        borderColor: 'white',
+        marginTop: 10,
+        height: 50,
+        width: "100%",
+        backgroundColor: "red",
     },
     ButtonStyling: {
         borderRadius: 15,
         borderWidth: 1,
         borderColor: 'black',
+        width: "100%",
+        height: "100%"
+    },
+    LoadingContainer: {
+        backgroundColor: "rgba(0, 0, 0, .8)",
+        position: "absolute",
+        top: window.height/2,
+        left: window.width/2 - 50,
+        width: 100,
+        height: 100,
+        justifyContent: "center",
+        alignItems: "center"
     },
 }
 
