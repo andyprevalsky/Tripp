@@ -1,3 +1,4 @@
+import firebase from 'firebase';
 import { Actions } from 'react-native-router-flux';
 
 import {
@@ -6,6 +7,7 @@ import {
     LOGIN_USER_START,
     LOGIN_USER_SUCCESS,
     LOGIN_USER_FAILED,
+    UBER_TOKEN_SET
 } from './types';
 
 export const emailTextChanged = (text) => {
@@ -19,6 +21,13 @@ export const passwordTextChanged = (text) => {
     return {
         type: PASSWORD_CHANGED,
         payload: text
+    }
+}
+
+export const setUberAuthToken = (token) => {
+    return {
+        type: UBER_TOKEN_SET,
+        payload: token
     }
 }
 

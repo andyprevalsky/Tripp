@@ -3,7 +3,8 @@ import {
     PASSWORD_CHANGED,
     LOGIN_USER_START,
     LOGIN_USER_SUCCESS,
-    LOGIN_USER_FAILED
+    LOGIN_USER_FAILED,
+    UBER_TOKEN_SET
     } from '../actions/types';
 
 const INITIAL_STATE = { 
@@ -11,7 +12,8 @@ const INITIAL_STATE = {
     password: '',
     loading: false,
     user: null,
-    error: false
+    error: false,
+    uberAuthToken: null,
 };
 
 export default (state = INITIAL_STATE, action) => {
@@ -23,9 +25,11 @@ export default (state = INITIAL_STATE, action) => {
         case LOGIN_USER_START:
             return { ...state, loading: true, error: false };
         case LOGIN_USER_SUCCESS:
-            return { ...INITIAL_STATE, user: action.payload };
+            return { ...state, user: action.payload };
         case LOGIN_USER_FAILED:
-            return { ...INITIAL_STATE, loading: false, error: true };
+            return { ...state, loading: false, error: true };
+        case UBER_TOKEN_SET:
+            return { ...state, uberAuthToken: action.payload };
         default:
             return state;
     }
